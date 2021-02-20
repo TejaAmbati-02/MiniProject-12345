@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- We are using Bulma to provide some nice styles: https://bulma.io/documentation/ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <link rel="stylesheet" href="./static/style.css">
+
+  {% block head %}{% endblock %}
+
+  <title>{% block title %}Mini Project{% endblock %}</title>
+</head>
+
+<body>
+  <section class="hero is-warning is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div id="logo">
+          <img src="./static/logo-text.png" alt="IT Department" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <h1 class="title is-size-3-tablet is-size-4-mobile has-text-centered	">
+        <i class="fas fa-heartbeat"></i>
+        <!-- TODO: Change to your own app name. -->
+        Heart Health Monitor
+      </h1>
+
+      {% block content %}{% endblock %}
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      {% block footer %}{% endblock %}
+
+      <p class="disclaimer is-size-7">
+        <em>Project is Done By</em>
+        <ol>
+          <li>B.Leela sai padmavathi(17A21A1204)</li>
+          <li>A.Sai(17A21A1201)</li>
+          <li>A.Teja sai kumar(17A21A1202)</li>
+          <li>A.Ashok(17A21A1203)</li>
+          <li>Ch.Hemanth(17A21A1205)</li>
+        </ol>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
